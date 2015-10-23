@@ -1,10 +1,10 @@
 # Ruby Motion Exercise
 
 ## Description
-Exercise where I follow a ruby motion tutorial for developing IOS apps.
+Basic IOS app that changes the color of the background clicking on different buttons.
 
 ##Technical Specifications
--TDD
--Xcode 7.0.1
--Ruby Motion
--Bacon
+- TDD
+- Xcode 7.0.1
+- Ruby Motion
+- Bacon

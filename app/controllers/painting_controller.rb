@@ -11,6 +11,11 @@ class PaintingController < UIViewController
   outlet :white_button
 
   def select_color(sender)
+    buttons = [black_button, purple_button, green_button, blue_button, white_button]
+    buttons.each do |button|
+      button.selected = false
+    end
+    sender.selected = true
   end
 
 end

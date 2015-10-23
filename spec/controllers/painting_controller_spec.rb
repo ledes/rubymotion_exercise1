@@ -30,4 +30,21 @@ describe PaintingController do
       controller.white_button.should.not.be.nil
     end
   end
+
+  describe "#select_color" do
+    before do
+      controller.select_color(controller.green_button)
+    end
+
+    it "deselects the other colors" do
+      controller.black_button.state.should == UIControlStateNormal
+      controller.purple_button.state.should == UIControlStateNormal
+      controller.blue_button.state.should == UIControlStateNormal
+      controller.white_button.state.should == UIControlStateNormal
+    end
+
+    it "selects the color" do
+      controller.green_button.state.should == UIControlStateSelected
+    end
+  end
 end
