@@ -31,6 +31,12 @@ describe PaintingController do
     end
   end
 
+  describe "#painting_view" do
+    it "is connected in the storyboard" do
+      controller.painting_view.should.not.be.nil
+    end
+  end
+
   describe "#select_color" do
     before do
       controller.select_color(controller.green_button)
