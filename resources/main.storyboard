@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="qks-j4-p1E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="qks-j4-p1E">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Painting Controller-->
         <scene sceneID="jNg-Qj-MAR">
             <objects>
-                <viewController storyboardIdentifier="PaintingController" id="qks-j4-p1E" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PaintingController" id="qks-j4-p1E" customClass="PaintingController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dkp-P3-S3n"/>
                         <viewControllerLayoutGuide type="bottom" id="x8e-gd-wE2"/>
@@ -23,14 +23,69 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6s-3f-hr1">
+                                <rect key="frame" x="69" y="531" width="50" height="50"/>
+                                <animations/>
+                                <color key="tintColor" red="0.94146439009097371" green="0.95050167610742764" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="button_black.png"/>
+                                <state key="selected" backgroundImage="button_black_selected.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyA-eU-qdi">
+                                <rect key="frame" x="173" y="531" width="50" height="50"/>
+                                <animations/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="button_purple.png"/>
+                                <state key="selected" backgroundImage="button_purple_selected.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzc-8T-hcL">
+                                <rect key="frame" x="269" y="531" width="50" height="50"/>
+                                <animations/>
+                                <color key="tintColor" red="0.94146439010000005" green="0.95050167610000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="button_green.png"/>
+                                <state key="selected" backgroundImage="button_green_selected.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4Q-Sj-4P1">
+                                <rect key="frame" x="365" y="531" width="50" height="50"/>
+                                <animations/>
+                                <color key="tintColor" red="0.94146439010000005" green="0.95050167610000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="button_blue.png"/>
+                                <state key="selected" backgroundImage="button_blue_selected.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVK-Ph-cii">
+                                <rect key="frame" x="472" y="531" width="50" height="50"/>
+                                <animations/>
+                                <color key="tintColor" red="0.94146439010000005" green="0.95050167610000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="button_white.png"/>
+                                <state key="selected" backgroundImage="button_white_selected.png"/>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="black_button" destination="Z6s-3f-hr1" id="cG3-gl-kbo"/>
+                        <outlet property="blue_button" destination="o4Q-Sj-4P1" id="4KJ-88-DVf"/>
+                        <outlet property="green_button" destination="tzc-8T-hcL" id="1Bt-Bv-uh1"/>
+                        <outlet property="purple_button" destination="WyA-eU-qdi" id="k60-MN-VLN"/>
+                        <outlet property="white_button" destination="eVK-Ph-cii" id="hRV-EX-N3G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6C-xX-kqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="201" y="356"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="button_black.png" width="100" height="100"/>
+        <image name="button_black_selected.png" width="100" height="100"/>
+        <image name="button_blue.png" width="100" height="100"/>
+        <image name="button_blue_selected.png" width="100" height="100"/>
+        <image name="button_green.png" width="100" height="100"/>
+        <image name="button_green_selected.png" width="100" height="100"/>
+        <image name="button_purple.png" width="100" height="100"/>
+        <image name="button_purple_selected.png" width="100" height="100"/>
+        <image name="button_white.png" width="100" height="100"/>
+        <image name="button_white_selected.png" width="100" height="100"/>
+    </resources>
 </document>
