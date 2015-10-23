@@ -47,4 +47,15 @@ describe PaintingController do
       controller.green_button.state.should == UIControlStateSelected
     end
   end
+
+  describe "#selected_color" do
+
+    before do
+      controller.select_color(controller.green_button)
+    end
+
+    it "returns the correct color" do
+      controller.selected_color.should == PaintingController::COLORS[2]
+    end
+  end
 end

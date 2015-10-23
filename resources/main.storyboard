@@ -12,7 +12,7 @@
                         <viewControllerLayoutGuide type="top" id="dkp-P3-S3n"/>
                         <viewControllerLayoutGuide type="bottom" id="x8e-gd-wE2"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="faY-sX-iCW">
+                    <view key="view" contentMode="scaleAspectFit" id="faY-sX-iCW">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -23,40 +23,40 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6s-3f-hr1">
-                                <rect key="frame" x="69" y="531" width="50" height="50"/>
-                                <animations/>
-                                <color key="tintColor" red="0.94146439009097371" green="0.95050167610742764" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                <state key="normal" backgroundImage="button_black.png"/>
-                                <state key="selected" backgroundImage="button_black_selected.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyA-eU-qdi">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WyA-eU-qdi">
                                 <rect key="frame" x="173" y="531" width="50" height="50"/>
                                 <animations/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <state key="normal" backgroundImage="button_purple.png"/>
                                 <state key="selected" backgroundImage="button_purple_selected.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzc-8T-hcL">
-                                <rect key="frame" x="269" y="531" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tzc-8T-hcL">
+                                <rect key="frame" x="272" y="531" width="50" height="50"/>
                                 <animations/>
                                 <color key="tintColor" red="0.94146439010000005" green="0.95050167610000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <state key="normal" backgroundImage="button_green.png"/>
                                 <state key="selected" backgroundImage="button_green_selected.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4Q-Sj-4P1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4Q-Sj-4P1">
                                 <rect key="frame" x="365" y="531" width="50" height="50"/>
                                 <animations/>
                                 <color key="tintColor" red="0.94146439010000005" green="0.95050167610000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <state key="normal" backgroundImage="button_blue.png"/>
                                 <state key="selected" backgroundImage="button_blue_selected.png"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVK-Ph-cii">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVK-Ph-cii">
                                 <rect key="frame" x="472" y="531" width="50" height="50"/>
                                 <animations/>
                                 <color key="tintColor" red="0.94146439010000005" green="0.95050167610000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                                 <state key="normal" backgroundImage="button_white.png"/>
                                 <state key="selected" backgroundImage="button_white_selected.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6s-3f-hr1">
+                                <rect key="frame" x="66" y="531" width="50" height="50"/>
+                                <animations/>
+                                <color key="tintColor" red="0.94146439009097371" green="0.95050167610742764" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <state key="normal" backgroundImage="button_black.png"/>
+                                <state key="selected" backgroundImage="button_black_selected.png"/>
                             </button>
                         </subviews>
                         <animations/>
