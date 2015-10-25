@@ -58,6 +58,9 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="20" width="360" height="480"/>
                                 </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="2JC-0Q-Fbq" id="hI1-8k-04Z"/>
+                                </connections>
                             </view>
                         </subviews>
                         <animations/>
@@ -84,6 +87,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6C-xX-kqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <customObject id="2JC-0Q-Fbq" customClass="StrokeGestureRecognizer">
+                    <connections>
+                        <action selector="select_color:" destination="qks-j4-p1E" id="sjX-zO-RKd"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="207" y="384"/>
         </scene>

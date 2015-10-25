@@ -1,10 +1,17 @@
 class PaintingView < UIView
-  attr_accessor :stroke
+  attr_accessor :painting
 
   def drawRect(rectangle)
     super
 
-    return if stroke.nil?
+    return if painting.nil?
+
+    painting.strokes.each do |stroke|
+      draw_stroke(stroke)
+    end
+  end
+
+  def draw_stroke(stroke)
 
     context = UIGraphicsGetCurrentContext()
     CGContextSetStrokeColorWithColor(context, stroke.color.CGColor)
@@ -12,15 +19,12 @@ class PaintingView < UIView
     CGContextSetLineCap(context, KCGLineCapRound)
     CGContextSetLineJoin(context, KCGLineJoinRound)
 
-    # move the line to the start point
     CGContextMoveToPoint(context, stroke.start_point.x, stroke.start_point.y)
 
-    # add each line in the path
     stroke.points.drop(1).each do |point|
       CGContextAddLineToPoint(context, point.x, point.y)
     end
 
-    # stroke the path
     CGContextStrokePath(context);
   end
 end

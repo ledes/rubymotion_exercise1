@@ -1,8 +1,8 @@
 class PaintingController < UIViewController
-  #extend IB adds several methods to your controller, including outlet
   extend IB
 
-  #Outlets allow you to connect objects to your controller in Interface Builder.
+  attr_reader :painting
+
   outlet :black_button
   outlet :purple_button
   outlet :green_button
@@ -19,20 +19,37 @@ class PaintingController < UIViewController
   ]
 
   def select_color(sender)
+
     buttons.each do |button|
       button.selected = false
     end
+
     sender.selected = true
-    @color = COLORS[sender.tag]
   end
 
   def selected_color
-    COLORS[buttons.find_index{ |button| button.state == UIControlStateSelected}]
+    COLORS[buttons.find_index { |button| button.state == UIControlStateSelected }]
+  end
+
+  def viewDidLoad
+    @painting = Painting.new
+    painting_view.painting = painting
+  end
+
+  def stroke_gesture_changed(stroke_gesture_recognizer)
+
+    if stroke_gesture_recognizer.state == UIGestureRecognizerStateBegan
+      painting.start_stroke(stroke_gesture_recognizer.position, selected_color)
+    else
+      painting.continue_stroke(stroke_gesture_recognizer.position)
+    end
+
+    painting_view.setNeedsDisplay
   end
 
   private
 
   def buttons
-    [black_button, purple_button, green_button, blue_button, white_button]
+    [ black_button, purple_button, green_button, blue_button, white_button ]
   end
 end

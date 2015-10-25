@@ -16,6 +16,7 @@ GEM
       xcodeproj (~> 0.17)
     json (1.8.3)
     minitest (5.8.1)
+    motion-facon (0.5.0.1)
     rake (10.4.2)
     sugarcube (3.3.7)
     thor (0.15.4)
@@ -33,6 +34,7 @@ PLATFORMS
 
 DEPENDENCIES
   ib
+  motion-facon
   rake
   sugarcube
 
